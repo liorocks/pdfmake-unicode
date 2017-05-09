@@ -55,7 +55,7 @@ $ bower install pdfmake-unicode --save
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfMakeUnicode from 'pdfmake-unicode';
 
-// this part is crutial
+// this part is crucial
 pdfMake.vfs = pdfMakeUnicode.pdfMake.vfs;
 
 let docDefinition = { content: 'Your unicode text will go here.' };
