@@ -1,0 +1,22 @@
+{
+  "name": "pdfmake-unicode",
+  "version" : "0.0.1",
+  "description": "Support Unicode Characters in PDFmake library.",
+  "main": "dist/pdfmake-unicode.js",
+  "keywords": ["pdf", "pdfmake", "unicode", "font", "utf-8"],
+  "authors": [
+    "Lado Lomidze"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Landish/pdfmake-unicode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pdfmake": "^0.1.27"
+  }
+}
