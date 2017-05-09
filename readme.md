@@ -1,5 +1,8 @@
 # PDFMake Unicode
 
+[![npm](https://img.shields.io/npm/v/pdfmake-unicode.svg)](https://www.npmjs.com/package/pdfmake-unicode)
+[![Demo](https://img.shields.io/badge/View-Demo-blue.svg)](https://landish.github.io/pdfmake-unicode/)
+
 Support Unicode Characters in [PDFmake](https://github.com/bpampuch/pdfmake) library.
 
 
@@ -9,7 +12,7 @@ Support Unicode Characters in [PDFmake](https://github.com/bpampuch/pdfmake) lib
 
 By default pdfmake uses [Roboto](https://fonts.google.com/specimen/Roboto) font, which does not support Unicode characters.
 
-This package is an extension for adding unicode character support. It comes with two fonts [Arial GEO](http://fonts.ge/en/pack/28/Arial-GEO) font, which has 4 styles: Regular, **Bold**, *Italic* and ***Bold Italic***.
+This package is an extension for adding unicode character support. It comes with a [Arial GEO](http://fonts.ge/en/pack/28/Arial-GEO) font, which has 4 styles: Regular, **Bold**, *Italic* and ***Bold Italic***.
 
 ## Installation
 
@@ -38,15 +41,27 @@ $ bower install pdfmake-unicode --save
 
 ```html
 <script src="pdfmake.min.js"></script>
-<script src="build/pdfmake-unicode.js"></script>
+<script src="dist/pdfmake-unicode.js"></script>
 <script>
   var docDefinition = { content: 'Your unicode text will go here.' };
   pdfMake.createPdf(docDefinition).download('filename.pdf');
 </script>
 
 ```
+### Use with ES6
 
+```js
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfMakeUnicode from 'pdfmake-unicode';
+
+// this part is crutial
+pdfMake.vfs = pdfMakeUnicode.pdfMake.vfs;
+
+let docDefinition = { content: 'Your unicode text will go here.' };
+pdfMake.createPdf(docDefinition).download('filename.pdf');
+
+```
 
 ## Licence
 
-The PDFMake Unicode is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The PDFMake Unicode is open-sourced software licensed under the [MIT license](https://github.com/Landish/pdfmake-unicode/blob/master/LICENSE).
