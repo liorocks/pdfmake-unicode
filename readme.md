@@ -1,7 +1,8 @@
 # PDFMake Unicode
 
 [![npm](https://img.shields.io/npm/v/pdfmake-unicode.svg)](https://www.npmjs.com/package/pdfmake-unicode)
-[![Demo](https://img.shields.io/badge/View-Demo-blue.svg)](https://landish.github.io/pdfmake-unicode/)
+[![license](https://img.shields.io/github/license/landish/pdfmake-unicode.svg)](https://github.com/Landish/pdfmake-unicode/blob/master/LICENSE)
+[![Demo](https://img.shields.io/badge/View-Demo-green.svg)](https://landish.github.io/pdfmake-unicode/)
 
 Support Unicode Characters in [PDFmake](https://github.com/bpampuch/pdfmake) library.
 
@@ -61,6 +62,11 @@ let docDefinition = { content: 'Your unicode text will go here.' };
 pdfMake.createPdf(docDefinition).download('filename.pdf');
 
 ```
+
+## Supported Languages
+* Georgian
+* Russian
+* Basic Latin
 
 ## Licence
 
