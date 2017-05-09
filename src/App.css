@@ -1,0 +1,158 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #34495e;
+  padding: 40px 0;
+  color: white;
+}
+
+.App-header h2 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.App-header p {
+  margin-bottom: .65em;
+}
+
+.App-content {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  margin: auto;
+  padding: 40px;
+  min-height: 400px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.App-editor {
+  width: 50%;
+  margin-right: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.App-editor-buttons {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  background: #fafafa;
+}
+
+.App-editor textarea {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  border: 0;
+  resize: none;
+  color: inherit;
+}
+
+.App-editor textarea.is-bold {
+  font-weight: bold;
+}
+
+.App-editor textarea.is-italic {
+  font-style: italic;
+}
+
+.App-preview {
+  margin-left: 20px;
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.App-preview:not(.is-active):before {
+  content: "Click the Preview button";
+}
+
+.App-preview iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.App-button {
+  display: inline-block;
+  color: #95a5a6;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #95a5a6;
+}
+
+.App-button.is-active,
+.App-button:hover {
+  background: #7f8c8d;
+  border-color: #7f8c8d;
+  color: white;
+}
+
+.App-footer {
+  text-align: center;
+  background: #34495e;
+  border-top: 1px solid #2c3e50;
+  padding: 20px;
+  color: white;
+}
+
+.App-footer a {
+  color: white;
+}
+
+.App-footer a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .App-content {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .App-preview,
+  .App-editor {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .App-editor {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .App-preview {
+    margin-left: 0;
+  }
+
+  .App-button {
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

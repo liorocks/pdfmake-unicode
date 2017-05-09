@@ -1,35 +1,24 @@
 {
-  "name": "pdfmake-unicode",
-  "version": "0.0.1",
-  "description": "Support Unicode Characters in PDFmake library.",
-  "main": "dist/pdfmake-unicode.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Landish/pdfmake-unicode.git"
-  },
-  "keywords": [
-    "pdf",
-    "pdfmake",
-    "unicode",
-    "font",
-    "utf-8"
-  ],
-  "author": "Lado Lomidze",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Landish/pdfmake-unicode/issues"
-  },
-  "homepage": "https://github.com/Landish/pdfmake-unicode#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-each": "^0.5.0",
-    "gulp-file-contents-to-json": "^0.2.1"
-  },
+  "name": "pdfmake-unicode-demo",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://landish.github.io/pdfmake-unicode",
   "dependencies": {
-    "pdfmake": "^0.1.27"
+    "classnames": "^2.2.5",
+    "pdfmake-unicode": "0.0.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
