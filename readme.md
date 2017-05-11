@@ -1,6 +1,7 @@
 # PDFMake Unicode
 
 [![npm](https://img.shields.io/npm/v/pdfmake-unicode.svg)](https://www.npmjs.com/package/pdfmake-unicode)
+[![npm](https://img.shields.io/npm/dt/pdfmake-unicode.svg)](https://www.npmjs.com/package/pdfmake-unicode)
 [![license](https://img.shields.io/github/license/landish/pdfmake-unicode.svg)](https://github.com/Landish/pdfmake-unicode/blob/master/LICENSE)
 [![Demo](https://img.shields.io/badge/View-Demo-green.svg)](https://landish.github.io/pdfmake-unicode/)
 
