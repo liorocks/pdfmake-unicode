@@ -1,0 +1,50 @@
+.Editor {
+  width: 50%;
+  margin-right: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Editor-buttons {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px 15px;
+  background: #fafafa;
+}
+
+.Editor textarea {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  border: 0;
+  resize: none;
+  color: inherit;
+}
+
+.Editor textarea.is-bold {
+  font-weight: bold;
+}
+
+.Editor textarea.is-italic {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .Editor {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .Editor-buttons {
+    padding-bottom: 10px;
+  }
+}

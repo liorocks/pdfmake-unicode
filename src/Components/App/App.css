@@ -1,0 +1,23 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-content {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  margin: auto;
+  padding: 40px;
+  min-height: 400px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .App-content {
+    padding: 10px;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.Header {
+  text-align: center;
+  background-color: #34495e;
+  padding: 40px 0;
+  color: white;
+}
+
+.Header h2 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.Header p {
+  margin-bottom: .65em;
+}

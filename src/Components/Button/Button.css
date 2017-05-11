@@ -1,0 +1,28 @@
+.Button {
+  display: inline-block;
+  color: #95a5a6;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #95a5a6;
+}
+
+.Button.is-active,
+.Button:hover {
+  background: #7f8c8d;
+  border-color: #7f8c8d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  .Button {
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

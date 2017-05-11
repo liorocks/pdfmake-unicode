@@ -1,0 +1,32 @@
+.Preview {
+  margin-left: 20px;
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.Preview:not(.is-active):before {
+  content: "Click the Preview button";
+}
+
+.Preview iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+
+  .Preview {
+    width: 100%;
+    min-height: 300px;
+    margin-left: 0;
+  }
+}
