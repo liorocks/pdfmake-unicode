@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import pdfMake from 'pdfmake/build/pdfmake';
 import pdfMakeUnicode from 'pdfmake-unicode';
 import Header from '../Header/Header';
+import Content from '../Content/Content';
 import Editor from '../Editor/Editor';
 import Preview from '../Preview/Preview';
 import Footer from '../Footer/Footer';
@@ -74,7 +75,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="App-content">
+        <Content>
           <Editor
             text={this.state.text}
             onText={this.changeText}
@@ -89,7 +90,7 @@ class App extends Component {
             preview={this.state.preview}
             data={this.state.previewData}
           />
-        </div>
+        </Content>
         <Footer />
       </div>
     );
